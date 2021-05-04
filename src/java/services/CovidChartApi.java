@@ -45,7 +45,7 @@ public class CovidChartApi {
     @GET
     @Produces("application/json")
     public String getJson() throws MalformedURLException, IOException {
-        String api = "https://covid19.th-stat.com/api/open/today?key=IM4FQlfG0O1th7jj1en3cbm9VHlyT9ye";
+        String api = "https://covid19.th-stat.com/api/open/today";
         URL url = new URL(api);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
